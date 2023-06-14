@@ -10,12 +10,8 @@ namespace Practice_Problem_3B
     {
         public static void Main(string[] args)
         {
-            DemoExample demo = new DemoExample();
-            demo.Display();
-            DemoExample demo1 = new DemoExample(5, 7);
-            demo1.Addition();
-
+         DemoExample demoExample = new DemoExample();
+         demoExample.checkEvenOdd(50);
         }
     }
-     
-}
+      }

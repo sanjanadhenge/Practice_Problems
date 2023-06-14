@@ -6,31 +6,22 @@ using System.Threading.Tasks;
 
 namespace Practice_Problem_3B
 {
-   public class DemoExample
+    public interface IDemo
     {
-     //Default Constructor
-        public string name;
-        public DemoExample()
+        public void checkEvenOdd(int a);
+    }
+   public class DemoExample : IDemo
+    {
+     public void checkEvenOdd(int a)
         {
-            Console.WriteLine("Enter your name");
-            string name = Console.ReadLine();
-            this.name = name;
+            if(a % 2 == 0)
+            {
+                Console.WriteLine("{0} is Even ", a);
+            }
+            else
+            {
+                Console.WriteLine("{0} is Odd ", a);
+            }
         }
-        public void Display()
-        {
-            Console.WriteLine("Hello " + this.name);
-        }
-   //Parameterized Constaructor
-        public int a, b;
-        public DemoExample(int a, int b)
-        {
-            this.a = a;
-            this.b = b;
-        }
-        public void Addition()
-        {
-            Console.WriteLine("Addition of {0} and {1} is {2} ", a, b, (a + b));
-        }
-
     }
 }
