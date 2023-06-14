@@ -10,8 +10,9 @@ namespace Practice_Problem_3B
     {
         public static void Main(string[] args)
         {
-         DemoExample demoExample = new DemoExample();
-         demoExample.checkEvenOdd(50);
+            Subclass subclass = new Subclass();
+            subclass.DisplayId();
+            subclass.Displaymail();
         }
     }
-      }
+}
